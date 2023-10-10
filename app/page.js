@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 export default function Home() {
-  const weekDemos = [1, 2, 3];
-  const doneUpTo = 3;
+  const weekDemos = [1, 2, 3, 4];
+  const doneUpTo = 4;
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -16,7 +16,7 @@ export default function Home() {
                   <Link href={`/week${week}`}>Week {week} Demo</Link>
                 </li>
               ) : (
-                <li key={week}>🚧 Week {week} Demo</li>
+                <li key={week}> Week {week} Demo</li>
               )
             )}
           </ul>
@@ -24,4 +24,4 @@ export default function Home() {
       </div>
     </main>
   );
-}
+} 
