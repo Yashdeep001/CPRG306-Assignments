@@ -1,12 +1,11 @@
 import React from 'react';
-import ItemList from './item-list';
+import ItemList from "./item-list";
 
-function App() {
+export default function Page(){
     return (
-        <div className="App">
-            <ItemList />
-        </div>
+        <main>
+            <h1>My shopping list</h1>
+            <ItemList/>
+        </main>
     );
-}
-
-export default App;
+}; 
